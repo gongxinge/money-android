@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etSiteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="平台名称" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etSiteUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="平台帐号" />
+
+    <EditText
+        android:id="@+id/etTotalMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="投入金额"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etYearRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="年利率(%)"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="期限"
+            android:inputType="number" />
+ <RadioGroup
+        android:id="@+id/gendergroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        "
+        <RadioButton
+            android:id="@+id/rbMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="月" />
+
+        <RadioButton
+            android:id="@+id/rbDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etBeginDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:focusable="false"
+        android:hint="计息日期"
+        />
+        
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="备注"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/btnDetailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看收款明细" />
+
+    </LinearLayout>
+
+</LinearLayout>

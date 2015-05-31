@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+E:\codepro\money-android\.metadata\.plugins\org.eclipse.jdt.core
+1245201459.index
+1447956738.index
