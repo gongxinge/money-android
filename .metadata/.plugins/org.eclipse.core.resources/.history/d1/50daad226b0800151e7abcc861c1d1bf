@@ -34,8 +34,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		// CheckNet(); // 检测网络并下载最新数据
-
+		//CheckNet(); // 检测网络并下载最新数据
+ 
 		handler = new Handler() {
 			@Override
 			public void handleMessage(Message msg) {
@@ -63,21 +63,22 @@ public class MainActivity extends Activity {
 		Button button2 = (Button) findViewById(R.id.btnDetailList);
 		Button btnDown = (Button) findViewById(R.id.btnDown);
 		Button btnResh = (Button) findViewById(R.id.btnResh);
-
+		
 		btnDown.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
 				CheckNet(); // 检测网络并下载最新数据
 			}
 		});
-
+		
 		btnResh.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-				GetMoneyInfo();
+				GetMoneyInfo(); 
 			}
 		});
-
+		
+		
 		button1.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
@@ -100,15 +101,17 @@ public class MainActivity extends Activity {
 
 	// 获取投资汇总信息
 	private void GetMoneyInfo() {
-		try {
-			BillInfoDAO billDAO = new BillInfoDAO(this);
-			List<Double> list = billDAO.GetMoneyInfo();
-			String infos = String.format("待收本息:%1$s\r\n待收本金:%2$s\r\n待收利息:%3$s",
-					WayOfRepayment.GetRound(list.get(0)),
-					WayOfRepayment.GetRound(list.get(0) - list.get(1)),
-					WayOfRepayment.GetRound(list.get(1)));
-			txtlogin.setText(infos);
-		} catch (Exception ex) {
+		try
+		{
+		BillInfoDAO billDAO = new BillInfoDAO(this);
+		List<Double> list = billDAO.GetMoneyInfo();
+		String infos = String.format("待收本息:%1$s\r\n待收本金:%2$s\r\n待收利息:%3$s",
+				WayOfRepayment.GetRound(list.get(0)),
+				WayOfRepayment.GetRound(list.get(0) - list.get(1)),
+				WayOfRepayment.GetRound(list.get(1)));
+		txtlogin.setText(infos);
+		}catch(Exception ex)
+		{
 			ex.printStackTrace();
 		}
 	}
@@ -121,20 +124,15 @@ public class MainActivity extends Activity {
 	}
 
 	private void CheckNet() {
-		try {
-			if (!isNetworkConnected()) {
-				Toast.makeText(MainActivity.this, "未连接网络，无法下载最新信息！",
-						Toast.LENGTH_SHORT).show();
-			} else if (getNetworkType() != NETTYPE_WIFI) {
-				Toast.makeText(MainActivity.this, "非WIFI网络，无法下载最新信息！",
-						Toast.LENGTH_SHORT).show();
-			} else {
-				download();
-				// 下载最新网贷数据
-			}
-		} catch (Exception ex) {
-
-			ex.printStackTrace();
+		if (!isNetworkConnected()) {
+			Toast.makeText(MainActivity.this, "未连接网络，无法下载最新信息！",
+					Toast.LENGTH_SHORT).show();
+		} else if (getNetworkType() != NETTYPE_WIFI) {
+			Toast.makeText(MainActivity.this, "非WIFI网络，无法下载最新信息！",
+					Toast.LENGTH_SHORT).show();
+		} else {
+			download();
+			// 下载最新网贷数据
 		}
 	}
 
@@ -182,11 +180,6 @@ public class MainActivity extends Activity {
 					flag = false;
 				} catch (IOException e) {
 					e.printStackTrace(); // 输出异常信息
-					flag = false;
-				}
-				catch(Exception ex)
-				{
-					ex.printStackTrace(); // 输出异常信息
 					flag = false;
 				}
 				Message m = handler.obtainMessage(); // 获取一个Message

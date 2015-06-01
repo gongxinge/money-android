@@ -186,7 +186,7 @@ public class MainActivity extends Activity {
 				}
 				catch(Exception ex)
 				{
-					ex.printStackTrace(); // 输出异常信息
+					e.printStackTrace(); // 输出异常信息
 					flag = false;
 				}
 				Message m = handler.obtainMessage(); // 获取一个Message
