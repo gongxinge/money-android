@@ -55,7 +55,6 @@ public class AddBillInfo extends Activity {
 		spWayOfPay.setAdapter(adapter); // 将适配器与选择列表框关联
 
 		btnBack.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				// 返回
 				setResult(Activity.RESULT_CANCELED, intent);
@@ -65,7 +64,6 @@ public class AddBillInfo extends Activity {
 
 		btnDetailView.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				// /查看收款明细
 				intent = new Intent();
@@ -94,7 +92,6 @@ public class AddBillInfo extends Activity {
 
 		etBeginDay.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				showDialog(0);
 			}

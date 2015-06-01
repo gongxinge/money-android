@@ -34,7 +34,6 @@ public class BillDetailList extends Activity {
 
 		btnBack.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				// setResult(Activity.RESULT_CANCELED, intent);
 				finish();
@@ -119,7 +118,6 @@ public class BillDetailList extends Activity {
 		// 添加列表项
 		builder.setItems(items, new OnClickListener() {
 
-			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				if (state == "待收") {
 					ShouKuan(ReceivedPeriod, ReceivablePeriod, BillDetailID,

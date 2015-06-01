@@ -35,7 +35,6 @@ public class BillDetailView extends Activity {
 
 		btnBack.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				setResult(Activity.RESULT_CANCELED, intent);
 				finish();
@@ -44,7 +43,6 @@ public class BillDetailView extends Activity {
 
 		btnSave.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				SaveData();
 				setResult(Activity.RESULT_OK, intent);

@@ -1,21 +1,17 @@
 package g.android.p2p.activity;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.List;
 
 import g.android.p2p.dao.*;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -70,14 +66,13 @@ public class MainActivity extends Activity {
 		
 		btnDown.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				CheckNet(); // 检测网络并下载最新数据
 			}
 		});
+		
 		btnResh.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				GetMoneyInfo(); 
 			}
@@ -86,7 +81,6 @@ public class MainActivity extends Activity {
 		
 		button1.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, AddBillInfo.class);
 				startActivityForResult(intent, 0);
@@ -96,7 +90,6 @@ public class MainActivity extends Activity {
 
 		button2.setOnClickListener(new View.OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this,
 						BillDetailList.class);
@@ -108,6 +101,8 @@ public class MainActivity extends Activity {
 
 	// 获取投资汇总信息
 	private void GetMoneyInfo() {
+		try
+		{
 		BillInfoDAO billDAO = new BillInfoDAO(this);
 		List<Double> list = billDAO.GetMoneyInfo();
 		String infos = String.format("待收本息:%1$s\r\n待收本金:%2$s\r\n待收利息:%3$s",
@@ -115,6 +110,10 @@ public class MainActivity extends Activity {
 				WayOfRepayment.GetRound(list.get(0) - list.get(1)),
 				WayOfRepayment.GetRound(list.get(1)));
 		txtlogin.setText(infos);
+		}catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
 	}
 
 	@Override

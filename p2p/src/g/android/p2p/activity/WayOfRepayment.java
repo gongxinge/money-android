@@ -10,7 +10,7 @@ import g.android.p2p.model.BillModel.E_WayOfRepayment;
 
 public class WayOfRepayment {
 	/**
-	 * æ ¹æ®æŠ•èµ„æ¡ä»¶è®¡ç®—è¿˜æ¬¾è®¡åˆ’
+	 * ¸ù¾İÍ¶×ÊÌõ¼ş¼ÆËã»¹¿î¼Æ»®
 	 * 
 	 * @param model
 	 * @return
@@ -18,15 +18,15 @@ public class WayOfRepayment {
 	public static java.util.ArrayList<BillDetailModel> GetDetailsByBillInfo(
 			BillModel argvalue) {
 		java.util.ArrayList<BillDetailModel> list = null;
-		if (argvalue.WayOfRepayment == E_WayOfRepayment.ç­‰é¢æœ¬æ¯) {
+		if (argvalue.WayOfRepayment == E_WayOfRepayment.µÈ¶î±¾Ï¢) {
 			list = GetDetailsByEveragePrincipalAndInterest(argvalue);
-		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.ç­‰é¢æœ¬é‡‘) {
+		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.µÈ¶î±¾½ğ) {
 			list = GetDetailsByEveragePrincipal(argvalue);
-		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.æœˆä»˜æ¯åˆ°æœŸä»˜æœ¬) {
+		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.ÔÂ¸¶Ï¢µ½ÆÚ¸¶±¾) {
 			list = GetDetailsByMonthInterestEndPrincipal(argvalue);
-		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.æœˆä»˜æ¯æŒ‰å­£ä»˜æœ¬) {
+		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.ÔÂ¸¶Ï¢°´¼¾¸¶±¾) {
 			list = GetDetailsByMonthInterestSeasonCapital(argvalue);
-		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.ä¸€æ¬¡æ€§æœ¬æ¯) {
+		} else if (argvalue.WayOfRepayment == E_WayOfRepayment.Ò»´ÎĞÔ±¾Ï¢) {
 			list = GetDetailsByToEnd(argvalue);
 		}
 
@@ -51,7 +51,7 @@ public class WayOfRepayment {
 	}
 
 	/**
-	 * ç­‰é¢æœ¬é‡‘è¿˜æ¬¾
+	 * µÈ¶î±¾½ğ»¹¿î
 	 * 
 	 * @param billModel
 	 * @return
@@ -61,18 +61,18 @@ public class WayOfRepayment {
 		java.util.ArrayList<BillDetailModel> details = new java.util.ArrayList<BillDetailModel>();
 
 		BillDetailModel detail = null;
-		double montyMoney = billModel.TotalMoney / billModel.Deadline; // æœˆè¿˜æ¬¾æœ¬é‡‘
+		double montyMoney = billModel.TotalMoney / billModel.Deadline; // ÔÂ»¹¿î±¾½ğ
 		double SurplusPayment = 0;
 		for (int i = 0; i < billModel.Deadline; i++) {
 			detail = new BillDetailModel();
 			if (i == 0) {
-				SurplusPayment = billModel.TotalMoney - montyMoney; // å‰©ä½™æœ¬é‡‘
+				SurplusPayment = billModel.TotalMoney - montyMoney; // Ê£Óà±¾½ğ
 				detail.ReceivableInterest = GetRound(billModel.TotalMoney
 						* (billModel.YearRete / 12));
 			} else {
 				detail.ReceivableInterest = GetRound(SurplusPayment
 						* (billModel.YearRete / 12));
-				SurplusPayment = SurplusPayment - montyMoney; // å‰©ä½™æœ¬é‡‘
+				SurplusPayment = SurplusPayment - montyMoney; // Ê£Óà±¾½ğ
 			}
 
 			detail.ReceivablePrincipalAndInterest = new BigDecimal(montyMoney
@@ -89,7 +89,7 @@ public class WayOfRepayment {
 	}
 
 	/**
-	 * ç­‰é¢æœ¬æ¯è¿˜æ¬¾
+	 * µÈ¶î±¾Ï¢»¹¿î
 	 * 
 	 * @param billModel
 	 * @return
@@ -109,7 +109,7 @@ public class WayOfRepayment {
 					(1 + billModel.YearRete / 12), i))
 					/ (Math.pow((1 + billModel.YearRete / 12),
 							billModel.Deadline) - 1) * billModel.TotalMoney;
-			detail.ReceivableInterest = tlnAcct * billModel.YearRete / 12; // åˆ©æ¯
+			detail.ReceivableInterest = tlnAcct * billModel.YearRete / 12; // ÀûÏ¢
 			detail.ReceivablePrincipalAndInterest = GetRound(paybaseAcct
 					+ detail.ReceivableInterest);
 			detail.ReceivableInterest = GetRound(detail.ReceivableInterest);
@@ -125,7 +125,7 @@ public class WayOfRepayment {
 	}
 
 	/**
-	 * æœˆè¿˜æ¯åˆ°æœŸè¿˜æœ¬
+	 * ÔÂ»¹Ï¢µ½ÆÚ»¹±¾
 	 * 
 	 * @param billModel
 	 * @return
@@ -134,8 +134,8 @@ public class WayOfRepayment {
 			BillModel billModel) {
 		java.util.ArrayList<BillDetailModel> details = new java.util.ArrayList<BillDetailModel>();
 
-		//double[] depAcctbal = new double[billModel.Deadline]; // æ€»è¿˜æ¬¾
-		// double[] payrateAcct = new double[bill.Deadline]; /*æ¯æœˆåº”è¿˜åˆ©æ¯*/
+		//double[] depAcctbal = new double[billModel.Deadline]; // ×Ü»¹¿î
+		// double[] payrateAcct = new double[bill.Deadline]; /*Ã¿ÔÂÓ¦»¹ÀûÏ¢*/
 
 		// Java's Math.round if just one argument is used:
 		double interest = GetRound(billModel.TotalMoney * billModel.YearRete
@@ -161,7 +161,7 @@ public class WayOfRepayment {
 	}
 
 	/**
-	 * æŒ‰æœˆè®¡æ¯æŒ‰å­£è¿˜æ¬¾
+	 * °´ÔÂ¼ÆÏ¢°´¼¾»¹¿î
 	 * 
 	 * @param billModel
 	 * @return
@@ -170,12 +170,12 @@ public class WayOfRepayment {
 			BillModel billModel) {
 		java.util.ArrayList<BillDetailModel> details = new java.util.ArrayList<BillDetailModel>();
 
-		int curMonth; // å½“å‰æœŸæ•°
-		double curMoney; // å½“å‰æœªè¿˜æœ¬é‡‘
+		int curMonth; // µ±Ç°ÆÚÊı
+		double curMoney; // µ±Ç°Î´»¹±¾½ğ
 		int seasonCount = billModel.Deadline % 3 > 0 ? billModel.Deadline / 3 + 1
-				: billModel.Deadline / 3; // åˆ†æˆå‡ å­£
-		double seasonCapital = Math.round(billModel.TotalMoney / seasonCount); // æ¯å­£åº”è¿˜çš„æœ¬é‡‘
-		double interest; // æ¯æœˆåº”è¿˜åˆ©æ¯
+				: billModel.Deadline / 3; // ·Ö³É¼¸¼¾
+		double seasonCapital = Math.round(billModel.TotalMoney / seasonCount); // Ã¿¼¾Ó¦»¹µÄ±¾½ğ
+		double interest; // Ã¿ÔÂÓ¦»¹ÀûÏ¢
 
 		for (int i = 0; i < seasonCount; i++) {
 			curMoney = billModel.TotalMoney - seasonCapital * i;
@@ -209,7 +209,7 @@ public class WayOfRepayment {
 	}
 
 	/**
-	 * æŒ‰æ—¥è®¡æ¯æŒ‰æœˆè¿˜æ¯åˆ°æœŸè¿˜æœ¬
+	 * °´ÈÕ¼ÆÏ¢°´ÔÂ»¹Ï¢µ½ÆÚ»¹±¾
 	 * 
 	 * @param bill
 	 * @return
@@ -222,7 +222,7 @@ public class WayOfRepayment {
 	}
 
 	/**
-	 * æŒ‰å¤©è®¡æ¯åˆ°æœŸä¸€æ¬¡æ€§è¿˜æœ¬æ¯
+	 * °´Ìì¼ÆÏ¢µ½ÆÚÒ»´ÎĞÔ»¹±¾Ï¢
 	 * 
 	 * @param billModel
 	 * @return
@@ -233,13 +233,13 @@ public class WayOfRepayment {
 		BillDetailModel detail = new BillDetailModel();
 		double interest = 0;
 		if (billModel.DeadlineType == 1) {
-			// æŒ‰å¤©æ€»åˆ©æ¯
+			// °´Ìì×ÜÀûÏ¢
 			interest = GetRound(billModel.YearRete / 365 * billModel.Deadline
 					* billModel.TotalMoney);
 		} else {
-			// æŒ‰æœˆæ€»åˆ©æ¯
+			// °´ÔÂ×ÜÀûÏ¢
 			interest = GetRound(billModel.YearRete / 12 * billModel.Deadline
-					* billModel.TotalMoney);// æ€»åˆ©æ¯
+					* billModel.TotalMoney);// ×ÜÀûÏ¢
 		}
 
 		detail.ReceivableInterest = interest;
@@ -262,9 +262,9 @@ public class WayOfRepayment {
 		}
 		
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");// æ ¼å¼åŒ–å¯¹è±¡
-		Calendar calendar = Calendar.getInstance();// æ—¥å†å¯¹è±¡
-		calendar.setTime(date);// è®¾ç½®å½“å‰æ—¥æœŸ
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");// ¸ñÊ½»¯¶ÔÏó
+		Calendar calendar = Calendar.getInstance();// ÈÕÀú¶ÔÏó
+		calendar.setTime(date);// ÉèÖÃµ±Ç°ÈÕÆÚ
 		if (dayOrMonth == 1)
 			calendar.add(Calendar.MONTH, count);
 		else
