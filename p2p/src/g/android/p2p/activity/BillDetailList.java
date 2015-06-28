@@ -19,9 +19,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 public class BillDetailList extends Activity {
 	ListView lv;
+	int AddMonth = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,14 +31,25 @@ public class BillDetailList extends Activity {
 		setContentView(R.layout.billdetaillist);
 		ShowDetails();
 
-		Button btnBack = (Button) findViewById(R.id.btnBack);
 		lv = (ListView) findViewById(R.id.listView1);
+		Button btnPrev = (Button) findViewById(R.id.btnPrev);
+		Button btnNext = (Button) findViewById(R.id.btnNext);
 
-		btnBack.setOnClickListener(new View.OnClickListener() {
+		btnPrev.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-				// setResult(Activity.RESULT_CANCELED, intent);
-				finish();
+				// TODO Auto-generated method stub
+				AddMonth--;
+				ShowDetails();
+			}
+		});
+
+		btnNext.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				AddMonth++;
+				ShowDetails();
 			}
 		});
 
@@ -59,6 +72,8 @@ public class BillDetailList extends Activity {
 		List<BillDetailModel> details = dao.getDetails(builder.toString());
 
 		List<HashMap<String, Object>> data = new ArrayList<HashMap<String, Object>>();
+		float benxi = 0;
+		float lixi = 0;
 		for (BillDetailModel detail : details) {
 			HashMap<String, Object> item = new HashMap<String, Object>();
 			item.put("ReceivedPeriod", detail.ReceivedPeriod);
@@ -77,17 +92,24 @@ public class BillDetailList extends Activity {
 			item.put("recbenjin", String.format("应收本金:%1$s", WayOfRepayment
 					.GetRound(detail.ReceivablePrincipalAndInterest
 							- detail.ReceivableInterest)));
+			benxi += detail.ReceivablePrincipalAndInterest;
+			lixi += detail.ReceivableInterest;
 			data.add(item);
 		}
+		TextView txtMonthInfo = (TextView) findViewById(R.id.txtMonthInfo);
+
+		((TextView) findViewById(R.id.txtMonthStr)).setText(String.format(
+				"%s收益汇总", getCurDayStr()));
+		txtMonthInfo.setText(String.format("本息：%s\t\t利息：%s", (int) benxi,
+				(int) lixi));
+
 		SimpleAdapter adapter = new SimpleAdapter(this, data,
-				R.layout.billdetaillistitem,
-				new String[] { "state", "totalmoney", "sitename",
-						"siteusername", "remark", "periods", "recdate",
-						"recall", "reclixi", "recbenjin" }, new int[] {
-						R.id.tvState, R.id.tvTotalMoney, R.id.tvSiteName,
-						R.id.tvSiteUserName, R.id.tvRemark, R.id.tvPeriods,
-						R.id.tvRecDate, R.id.tvRecAll, R.id.tvRecLiXi,
-						R.id.tvRecBenJin });
+				R.layout.billdetaillistitem, new String[] { "state",
+						"sitename", "siteusername", "remark", "periods",
+						"recdate", "recall", "reclixi", "recbenjin" },
+				new int[] { R.id.tvState, R.id.tvSiteName, R.id.tvSiteUserName,
+						R.id.tvRemark, R.id.tvPeriods, R.id.tvRecDate,
+						R.id.tvRecAll, R.id.tvRecLiXi, R.id.tvRecBenJin });
 
 		ListView listview = (ListView) findViewById(R.id.listView1);
 		listview.setAdapter(adapter);
@@ -177,6 +199,8 @@ public class BillDetailList extends Activity {
 	}
 
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy年MM月");
+
 	/**
 	 * 得到本月第一天的日期
 	 * 
@@ -185,6 +209,7 @@ public class BillDetailList extends Activity {
 	 */
 	public String getFirstDayOfMonth() {
 		Calendar cDay = Calendar.getInstance();
+		cDay.set(Calendar.MONTH, cDay.get(Calendar.MONTH) + AddMonth);
 		cDay.set(Calendar.DAY_OF_MONTH, 1);
 		return sdf.format(cDay.getTime());
 	}
@@ -197,9 +222,16 @@ public class BillDetailList extends Activity {
 	 */
 	public String getLastDayOfMonth() {
 		Calendar cDay = Calendar.getInstance();
+		cDay.set(Calendar.MONTH, cDay.get(Calendar.MONTH) + AddMonth);
 		cDay.set(Calendar.DAY_OF_MONTH,
 				cDay.getActualMaximum(Calendar.DAY_OF_MONTH));
 		return sdf.format(cDay.getTime());
+	}
+
+	public String getCurDayStr() {
+		Calendar cDay = Calendar.getInstance();
+		cDay.set(Calendar.MONTH, cDay.get(Calendar.MONTH) + AddMonth);
+		return sdf2.format(cDay.getTime());
 	}
 
 }
