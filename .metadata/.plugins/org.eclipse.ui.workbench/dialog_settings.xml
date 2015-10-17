@@ -15,4 +15,6 @@
 			<item value="com.android.ide.eclipse.ddms.views.category"/>
 		</list>
 	</section>
+	<section name="EditorSelectionDialog">
+	</section>
 </section>

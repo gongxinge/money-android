@@ -49,10 +49,10 @@ public class BillDetailDAO {
 		db = helper.getWritableDatabase();
 		//db = SQLiteDatabase.openDatabase("/data/data/g.android.p2p.activity/databases/data.dat", null, SQLiteDatabase.NO_LOCALIZED_COLLATORS | SQLiteDatabase.OPEN_READWRITE);// 初始化SQLiteDatabase对象
 		BillDetailModel detail = null;
-		
-		String sql = "select b.sitename,b.[SiteUserName],b.[TotalMoney],b.ReceivablePeriod,b.ReceivedPeriod,b.Remark,d.* from billdetail d left join billinfo b on d.[BillID]= b.billid";
+
+		String sql = "select b.sitename,b.[SiteUserName],b.[TotalMoney],b.ReceivablePeriod,b.ReceivedPeriod,b.Remark,d.* from billdetail d left join billinfo b on d.[BillID]= b.billid where d.deleted=0 and b.deleted=0";
 		if(!whereStr.isEmpty())
-			sql = String.format("%1$s where %2$s", sql, whereStr);
+			sql = String.format("%1$s and %2$s", sql, whereStr);
 		sql += " order by ReceivableDay asc";
 		
 		// 获取所有收入信息

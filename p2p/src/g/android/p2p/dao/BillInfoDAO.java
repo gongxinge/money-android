@@ -54,7 +54,7 @@ public class BillInfoDAO {
 		// 查找密码并存储到Cursor类中
 		Cursor cursor = db
 				.rawQuery(
-						"select sum(receivableprincipalandinterest) receivableprincipalandinterest,sum(receivableinterest) receivableinterest from billdetail where flag=0",
+						"select sum(receivableprincipalandinterest) receivableprincipalandinterest,sum(receivableinterest) receivableinterest from billdetail where flag=0 and deleted=0",
 						null);
 		if (cursor.moveToNext())// 遍历查找到的密码信息
 		{

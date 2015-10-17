@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="50" version="2.0">
+<workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="527" y="92">
+<window height="768" maximized="true" width="1024" x="299" y="94">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="com.android.ide.eclipse.ddms.views.LogCatView"/>
 </fastViewData>
@@ -20,10 +20,11 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -42,74 +43,42 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillModel.java" partName="BillModel.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/model/BillModel.java" title="BillModel.java" tooltip="P2P/src/g/android/p2p/model/BillModel.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/model/BillModel.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5009" selectionTopPixel="5168"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillDetailView.java" partName="BillDetailView.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/activity/BillDetailView.java" title="BillDetailView.java" tooltip="P2P/src/g/android/p2p/activity/BillDetailView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/activity/BillDetailView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="852" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DBOpenHelper.java" partName="DBOpenHelper.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/dao/DBOpenHelper.java" title="DBOpenHelper.java" tooltip="P2P/src/g/android/p2p/dao/DBOpenHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/dao/DBOpenHelper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="440" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillInfoDAO.java" partName="BillInfoDAO.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/dao/BillInfoDAO.java" title="BillInfoDAO.java" tooltip="P2P/src/g/android/p2p/dao/BillInfoDAO.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/dao/BillInfoDAO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="673" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddBillInfo.java" partName="AddBillInfo.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/activity/AddBillInfo.java" title="AddBillInfo.java" tooltip="P2P/src/g/android/p2p/activity/AddBillInfo.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/activity/AddBillInfo.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="920" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillDetailDAO.java" partName="BillDetailDAO.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/dao/BillDetailDAO.java" title="BillDetailDAO.java" tooltip="P2P/src/g/android/p2p/dao/BillDetailDAO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/dao/BillDetailDAO.java"/>
+<editorState selectionHorizontalPixel="414" selectionLength="0" selectionOffset="2395" selectionTopPixel="513"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="P2PActivity.java" partName="P2PActivity.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/activity/P2PActivity.java" title="P2PActivity.java" tooltip="P2P/src/g/android/p2p/activity/P2PActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/activity/P2PActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="350" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillDetailView.java" partName="BillDetailView.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/activity/BillDetailView.java" title="BillDetailView.java" tooltip="P2P/src/g/android/p2p/activity/BillDetailView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/activity/BillDetailView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="143" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillDetailList.java" partName="BillDetailList.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/activity/BillDetailList.java" title="BillDetailList.java" tooltip="P2P/src/g/android/p2p/activity/BillDetailList.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/activity/BillDetailList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6185" selectionTopPixel="3206"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="P2P Manifest" path="E:/codepro/money-android/P2P/AndroidManifest.xml" title="P2P Manifest" tooltip="P2P/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/AndroidManifest.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="billdetaillist.xml" partName="billdetaillist.xml" path="E:/codepro/money-android/P2P/res/layout/billdetaillist.xml" title="billdetaillist.xml" tooltip="P2P/res/layout/billdetaillist.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/res/layout/billdetaillist.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="billdetaillistitem.xml" partName="billdetaillistitem.xml" path="E:/codepro/money-android/P2P/res/layout/billdetaillistitem.xml" title="billdetaillistitem.xml" tooltip="P2P/res/layout/billdetaillistitem.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/res/layout/billdetaillistitem.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="addbillinfo.xml" partName="addbillinfo.xml" path="E:/codepro/money-android/P2P/res/layout/addbillinfo.xml" title="addbillinfo.xml" tooltip="P2P/res/layout/addbillinfo.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/res/layout/addbillinfo.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="E:/codepro/money-android/P2P/res/layout/main.xml" title="main.xml" tooltip="P2P/res/layout/main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/res/layout/main.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.PropertiesFileEditor" name="project.properties" partName="project.properties" path="E:/codepro/money-android/P2P/project.properties" title="project.properties" tooltip="P2P/project.properties" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/project.properties"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="360" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WayOfRepayment.java" partName="WayOfRepayment.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/activity/WayOfRepayment.java" title="WayOfRepayment.java" tooltip="P2P/src/g/android/p2p/activity/WayOfRepayment.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/activity/WayOfRepayment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="8459" selectionTopPixel="4522"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="E:/codepro/money-android/P2P/src/g/android/p2p/activity/MainActivity.java" title="MainActivity.java" tooltip="P2P/src/g/android/p2p/activity/MainActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/P2P/src/g/android/p2p/activity/MainActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3962" selectionTopPixel="2223"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="项目资源管理器">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="问题">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="问题">
 <expanded>
-<category IMemento.internal.id="警告"/>
+<category IMemento.internal.id="警告（19 项）"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -127,9 +96,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="包资源管理器">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
@@ -222,6 +189,7 @@
 <show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <show_view_action id="org.eclipse.wb.core.StructureView"/>
 <show_view_action id="org.eclipse.wb.core.PaletteView"/>
+<show_in_time id="org.eclipse.ui.navigator.ProjectExplorer" time="1445048469520"/>
 <show_in_time id="org.eclipse.egit.ui.RepositoriesView" time="1433171703411"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
@@ -247,6 +215,7 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@148cd1f" orientation="256" selectedTabId="org.eclipse.egit.ui.RepositoriesView" style="0">
 <fastViews>
@@ -260,7 +229,7 @@
 </fastViewBar>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@1718cf7" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29973474"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2055703"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.debug.ui.DebugView" style="0">
@@ -280,16 +249,17 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="包资源管理器"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="项目资源管理器"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.StructureView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.PaletteView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -342,7 +312,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@10385f1" ratio="0.3541944" ratioLeft="266" ratioRight="485" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -409,9 +379,6 @@
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@124ef8a" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.internal.introview" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
 </fastViewBars>
 <layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="调试"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -460,129 +427,156 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/P2P/res/layout/billdetaillistitem.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/BillDetailList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/P2P/res/layout/billdetaillist.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/AddBillInfo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/gen/g/android/p2p/activity/R.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/BillDetailView.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/MainActivity.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=P2P/D:\/Program Files\/eclipse\/android-sdk\/platforms\/android-15\/android.jar&lt;android.view(View.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/P2P/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/P2P/project.properties"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/WayOfRepayment.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/P2P/res/layout/billdetaillistitem.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/BillDetailView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/P2P/res/layout/billdetaillist.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/dao/BillInfoDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/dao/BillDetailDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/P2P/bin/classes.dex"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/BillDetailView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/dao/DBOpenHelper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/dao/BillInfoDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/dao/BillDetailDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/activity/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/P2P/src/g/android/p2p/dao/BillDetailDAO.java"/>
 </editors>
-<item historyLabel="MainActivity.java" index="3">
+<item historyLabel="billdetaillist.xml" index="1"/>
+<item historyLabel="BillDetailList.java" index="0">
 <position/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
+<item historyLabel="billdetaillist.xml" index="1"/>
+<item historyLabel="BillDetailList.java" index="0">
 <position/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
+<item historyLabel="billdetaillist.xml" index="1"/>
+<item historyLabel="AddBillInfo.java" index="2">
+<position info="not_deleted" x="985" y="0"/>
+</item>
+<item historyLabel="BillDetailList.java" index="0">
 <position/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
+<item historyLabel="billdetaillist.xml" index="1"/>
+<item historyLabel="BillDetailList.java" index="0">
+<position info="not_deleted" x="860" y="0"/>
+</item>
+<item historyLabel="R.java" index="3">
+<position info="not_deleted" x="880" y="0"/>
+</item>
+<item historyLabel="BillDetailList.java" index="0">
+<position info="not_deleted" x="935" y="0"/>
+</item>
+<item historyLabel="billdetaillist.xml" index="1"/>
+<item historyLabel="BillDetailList.java" index="0">
+<position info="not_deleted" x="1474" y="0"/>
+</item>
+<item historyLabel="billdetaillist.xml" index="1"/>
+<item historyLabel="BillDetailList.java" index="0">
+<position info="not_deleted" x="1474" y="0"/>
+</item>
+<item historyLabel="BillDetailList.java" index="0">
 <position/>
 </item>
-<item historyLabel="View.class" index="4">
+<item historyLabel="BillDetailList.java" index="0">
+<position info="not_deleted" x="1132" y="0"/>
+</item>
+<item historyLabel="BillDetailList.java" index="0">
+<position info="not_deleted" x="7469" y="0"/>
+</item>
+<item historyLabel="BillDetailList.java" index="0">
+<position info="not_deleted" x="6767" y="0"/>
+</item>
+<item historyLabel="BillDetailView.java" index="4">
+<position info="not_deleted" x="423" y="0"/>
+</item>
+<item historyLabel="AddBillInfo.java" index="2">
+<position info="not_deleted" x="985" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="2058" y="0"/>
+</item>
+<item historyLabel="billdetaillistitem.xml" index="6"/>
+<item historyLabel="BillDetailView.java" index="7">
+<position info="not_deleted" x="423" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="4461" y="0"/>
+</item>
+<item historyLabel="billdetaillist.xml" index="8"/>
+<item historyLabel="billdetaillistitem.xml" index="6"/>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="4461" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="1838" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="2489" y="0"/>
+</item>
+<item historyLabel="BillInfoDAO.java" index="9">
+<position info="not_deleted" x="2241" y="6"/>
+</item>
+<item historyLabel="BillDetailDAO.java" index="10">
+<position info="not_deleted" x="2772" y="0"/>
+</item>
+<item historyLabel="BillInfoDAO.java" index="9">
+<position info="not_deleted" x="2241" y="6"/>
+</item>
+<item historyLabel="BillDetailDAO.java" index="10">
+<position info="not_deleted" x="2280" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="4060" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="1826" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="1105" y="0"/>
+</item>
+<item historyLabel="classes.dex" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="billdetaillistitem.xml" index="0"/>
-<item historyLabel="billdetaillistitem.xml" index="0"/>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
+<item historyLabel="BillDetailView.java" index="12">
+<position info="not_deleted" x="852" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
+<item historyLabel="DBOpenHelper.java" index="13">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
+<item historyLabel="BillInfoDAO.java" index="14">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="billdetaillistitem.xml" index="0"/>
-<item historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="2629" y="0"/>
+<item historyLabel="BillDetailDAO.java" index="15">
+<position info="not_deleted" x="830" y="0"/>
 </item>
-<item historyLabel="billdetaillistitem.xml" index="0"/>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="789" y="0"/>
+<item historyLabel="DBOpenHelper.java" index="13">
+<position info="not_deleted" x="440" y="0"/>
 </item>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="1342" y="0"/>
+<item historyLabel="BillDetailView.java" index="12">
+<position info="not_deleted" x="852" y="0"/>
 </item>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="1391" y="0"/>
+<item historyLabel="MainActivity.java" index="16">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="P2P Manifest" index="5"/>
-<item historyLabel="project.properties" index="6">
-<position info="not_deleted" x="360" y="0"/>
+<item historyLabel="BillDetailDAO.java" index="17">
+<position info="not_deleted" x="830" y="0"/>
 </item>
-<item historyLabel="P2P Manifest" index="5"/>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="1391" y="0"/>
+<item historyLabel="BillDetailDAO.java" index="17">
+<position info="not_deleted" x="2354" y="41"/>
 </item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="742" y="8"/>
+<item historyLabel="BillDetailDAO.java" index="17">
+<position info="not_deleted" x="1993" y="0"/>
 </item>
-<item historyLabel="BillDetailList.java" index="1">
-<position/>
+<item historyLabel="BillDetailDAO.java" index="17">
+<position info="not_deleted" x="2395" y="0"/>
 </item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="128" y="0"/>
-</item>
-<item historyLabel="BillDetailList.java" index="1">
-<position/>
-</item>
-<item historyLabel="billdetaillistitem.xml" index="0"/>
-<item historyLabel="P2P Manifest" index="5"/>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="631" y="0"/>
-</item>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="0" y="31"/>
-</item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="747" y="0"/>
-</item>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="724" y="0"/>
-</item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="747" y="0"/>
-</item>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="724" y="0"/>
-</item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="664" y="0"/>
-</item>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="480" y="0"/>
-</item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="662" y="14"/>
-</item>
-<item historyLabel="P2P Manifest" index="5"/>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="860" y="0"/>
-</item>
-<item historyLabel="AddBillInfo.java" index="2">
-<position info="not_deleted" x="920" y="11"/>
-</item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="860" y="0"/>
-</item>
-<item historyLabel="WayOfRepayment.java" index="7">
-<position info="not_deleted" x="8441" y="16"/>
-</item>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="1166" y="0"/>
-</item>
-<item historyLabel="billdetaillistitem.xml" index="0"/>
-<item historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="5917" y="0"/>
-</item>
-<item historyLabel="WayOfRepayment.java" index="7">
-<position info="not_deleted" x="8459" y="10"/>
-</item>
-<item active="true" historyLabel="BillDetailList.java" index="1">
-<position info="not_deleted" x="5917" y="0"/>
+<item active="true" historyLabel="MainActivity.java" index="16">
+<position info="not_deleted" x="3743" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -594,7 +588,6 @@
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@148cd1f"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@373a9c"/>
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
@@ -612,35 +605,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="P2P/src/g/android/p2p/activity/MainActivity.java">
+<persistable path="/P2P/src/g/android/p2p/activity/MainActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillDetailDAO.java" tooltip="P2P/src/g/android/p2p/dao/BillDetailDAO.java">
+<persistable path="/P2P/src/g/android/p2p/dao/BillDetailDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillInfoDAO.java" tooltip="P2P/src/g/android/p2p/dao/BillInfoDAO.java">
+<persistable path="/P2P/src/g/android/p2p/dao/BillInfoDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DBOpenHelper.java" tooltip="P2P/src/g/android/p2p/dao/DBOpenHelper.java">
+<persistable path="/P2P/src/g/android/p2p/dao/DBOpenHelper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BillDetailView.java" tooltip="P2P/src/g/android/p2p/activity/BillDetailView.java">
+<persistable path="/P2P/src/g/android/p2p/activity/BillDetailView.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="P2P.apk" tooltip="P2P/bin/P2P.apk">
+<persistable path="/P2P/bin/P2P.apk"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="classes.dex" tooltip="P2P/bin/classes.dex">
+<persistable path="/P2P/bin/classes.dex"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="P2P/gen/g/android/p2p/activity/R.java">
+<persistable path="/P2P/gen/g/android/p2p/activity/R.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="InvocationTargetException.class" tooltip="java.lang.reflect.InvocationTargetException">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=P2P/D:\/Program Files\/eclipse\/android-sdk\/platforms\/android-15\/android.jar&lt;java.lang.reflect(InvocationTargetException.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.drawable.DrawableEditor" name="listborder.xml" tooltip="P2P/res/drawable/listborder.xml">
+<persistable path="/P2P/res/drawable/listborder.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="billdetailviewitem.xml" tooltip="P2P/res/layout/billdetailviewitem.xml">
+<persistable path="/P2P/res/layout/billdetailviewitem.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WayOfRepayment.java" tooltip="P2P/src/g/android/p2p/activity/WayOfRepayment.java">
 <persistable path="/P2P/src/g/android/p2p/activity/WayOfRepayment.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="project.properties" tooltip="P2P/project.properties">
 <persistable path="/P2P/project.properties"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="P2P/src/g/android/p2p/activity/MainActivity.java">
-<persistable path="/P2P/src/g/android/p2p/activity/MainActivity.java"/>
-</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="View.class" tooltip="android.view.View">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=P2P/D:\/Program Files\/eclipse\/android-sdk\/platforms\/android-15\/android.jar&lt;android.view(View.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="P2P/res/layout/main.xml">
 <persistable path="/P2P/res/layout/main.xml"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="InvocationTargetException.class" tooltip="java.lang.reflect.InvocationTargetException">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=P2P/D:\/Program Files\/eclipse\/android-sdk\/platforms\/android-15\/android.jar&lt;java.lang.reflect(InvocationTargetException.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="addbillinfo.xml" tooltip="P2P/res/layout/addbillinfo.xml">
-<persistable path="/P2P/res/layout/addbillinfo.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="P2P/gen/g/android/p2p/activity/R.java">
-<persistable path="/P2P/gen/g/android/p2p/activity/R.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="billdetaillistitem.xml" tooltip="P2P/res/layout/billdetaillistitem.xml">
-<persistable path="/P2P/res/layout/billdetaillistitem.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="billdetaillist.xml" tooltip="P2P/res/layout/billdetaillist.xml">
-<persistable path="/P2P/res/layout/billdetaillist.xml"/>
 </file>
 </mruList>
 </workbench>
