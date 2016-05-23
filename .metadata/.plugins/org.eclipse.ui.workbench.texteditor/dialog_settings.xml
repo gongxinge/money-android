@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="OnScrollListener" key="selection"/>
 		<list key="findhistory">
-			<item value="songchao"/>
-			<item value="select"/>
-			<item value="data.dat"/>
-			<item value="LinearLayout"/>
-			<item value="txtMonthInfo"/>
-			<item value="getFirstDayOfMonth"/>
-			<item value="date"/>
-			<item value="CheckNet"/>
+			<item value="OnScrollListener"/>
+			<item value="scroll"/>
+			<item value="CustomView"/>
+			<item value="content"/>
+			<item value="gestureDetector"/>
+			<item value="data"/>
+			<item value="tvRemark"/>
+			<item value="remark"/>
 		</list>
 		<list key="replacehistory">
 		</list>

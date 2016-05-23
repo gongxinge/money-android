@@ -48,6 +48,16 @@ public class BillDetailModel  implements Serializable{
 	public void setPeriods(String Periods) {
 		this.Periods = Periods;
 	}
+    /// <summary>
+    /// 奖励金额
+    /// </summary>
+    public double Reward ;
+    public double getReward(){
+    	return Reward;
+    }
+    public void setReward(double Reward){
+    	this.Reward = Reward;
+    }
 
 	// / <summary>
 	// / 应收日期

@@ -9,13 +9,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
     <TextView
-        android:id="@+id/txtMonthStr"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:text="收益汇总"
-        android:textSize="22dp" />
-    <TextView
         android:id="@+id/txtMonthInfo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -27,21 +20,9 @@
         android:id="@+id/llCenter"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/btnPrev"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="上个月" />
-
-        <Button
-            android:id="@+id/btnNext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="下个月" />
     </LinearLayout>
 
     <ListView

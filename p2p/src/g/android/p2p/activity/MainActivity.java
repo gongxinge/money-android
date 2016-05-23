@@ -142,7 +142,7 @@ public class MainActivity extends Activity {
 		new Thread(new Runnable() {
 			public void run() {
 				try {
-					String sourceUrl = "http://7xirah.com1.z0.glb.clouddn.com/p2p/data.dat";
+					String sourceUrl = "http://7xirah.com1.z0.glb.clouddn.com/p2p/gong.dat";
 					URL url = new URL(sourceUrl); // 创建下载地址对应的URL对象
 					HttpURLConnection urlConn = (HttpURLConnection) url
 							.openConnection(); // 创建一个连接
